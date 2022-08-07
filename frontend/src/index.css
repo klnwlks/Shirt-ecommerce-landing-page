@@ -1,0 +1,34 @@
+html, body, div, h1, h2, h3, h4, h5, h6, p, li, ul {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+@font-face {
+    font-family: 'Chillax';
+    src: url('Chillax-Regular.ttf')
+}
+
+@font-face {
+    font-family: 'Bould';
+    src: url('bould-regular-webfont.ttf')
+}
+
+@keyframes appear {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+@keyframes disappear {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+.disappear-anim {
+    animation: disappear 500ms forwards !important
+}

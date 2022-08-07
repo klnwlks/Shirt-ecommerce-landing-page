@@ -1,0 +1,105 @@
+#App {
+font-family: 'Chillax';
+
+.cart {
+    position: fixed;
+    height: 15%;
+    z-index: 99;
+    right: 2%;
+    top: 2%;
+    .content {
+	position: relative;
+	p {
+	    position: absolute;
+	    color: #e05e5e;
+	    font-weight: bold;
+	    font-size: 1.8vw;
+	    right: 0;
+	    bottom: 0;
+	}
+    }
+}
+
+.intro {
+    height: 85vh;
+    background: linear-gradient(0deg,rgba(10,10,10,.25),rgba(10,10,10,.3)),url('bg.jpg');
+    background-position: center center;
+    display: flex;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-family: Bould;
+
+    p { 
+	position: absolute; 
+	top: 1%; 
+	left: 1%;
+	font-size: 2vw 
+    }
+
+    .text {
+	background: #f1f1f1;
+	width: 30%;
+	height: 30%;
+	box-shadow: 0 5px 20px rgb(0 0 0 / 10%);
+	padding: 4%;
+	border-radius: 10px;
+	position: absolute;
+	left: 15%;
+	h1 { font-weight: 100; font-size: 3vw; }
+    }
+}
+
+.order-wrapper {
+    padding: 4%;
+    background: #f1f1f1;
+    position: relative;
+
+    .shirt-wrapper {
+	height: 40%;
+	scroll-behavior: smooth;
+	display: flex;
+	overflow-x: hidden;
+	width: 100%;
+	scroll-snap-type: both mandatory;
+	.col-container div:hover { cursor: pointer }
+	margin-bottom: 3%;
+
+    }
+
+    .scroll {
+	position: absolute;
+	z-index: 9;
+	top: 30%;
+
+	&:hover { cursor: pointer}
+    }
+
+    .scroll-left {
+	transform: scaleX(-1);
+	left: 20px;
+    }
+    
+    .scroll-right {
+	right: 20px;
+    }
+}
+
+.form-wrapper {
+    padding: 4%;
+    background: #f3f3f3;
+}
+
+.contact {
+    padding: 4%;
+    background: #101010;
+    ul {
+	color: white;
+	li a { 
+	    color: white;
+	    text-decoration: none;
+	}
+    }
+}
+}
