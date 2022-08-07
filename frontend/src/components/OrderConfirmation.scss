@@ -39,5 +39,9 @@
 	    right: 1%;
 	    top: 1%;
 	}
+	@media only screen and (max-width: 600px){
+	    width: 80%;
+	    padding-top: 10%;
+	}
     }
 }

@@ -18,6 +18,9 @@ font-family: 'Chillax';
 	    bottom: 0;
 	}
     }
+    @media only screen and (max-width: 600px) {
+	.content p { font-size: 6vw; }
+    }
 }
 
 .intro {
@@ -48,6 +51,25 @@ font-family: 'Chillax';
 	position: absolute;
 	left: 15%;
 	h1 { font-weight: 100; font-size: 3vw; }
+    }
+
+    @media only screen and (max-width: 600px) {
+	height: 50vh;
+	.text {
+	    display: flex;
+	    position: static;
+	    justify-content: center;
+	    width: 50%;
+	    h1 {
+		font-size: 6.5vw; 
+		margin-top: 4%;
+		text-align: center;
+	    }
+	} 
+	
+	p {
+	    font-size: 4vw;
+	}
     }
 }
 
