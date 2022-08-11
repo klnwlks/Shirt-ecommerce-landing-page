@@ -1,5 +1,6 @@
 #App {
 font-family: 'Chillax';
+background: #f1f1f1;
 
 .cart {
     position: fixed;
@@ -25,7 +26,7 @@ font-family: 'Chillax';
 
 .intro {
     height: 85vh;
-    background: linear-gradient(0deg,rgba(10,10,10,.25),rgba(10,10,10,.3)),url('bg.jpg');
+    background: linear-gradient(0deg,rgba(10,10,10,.25),rgba(10,10,10,.3)), url('bg.jpg');
     background-position: center center;
     display: flex;
     background-size: cover;
@@ -33,6 +34,7 @@ font-family: 'Chillax';
     align-items: center;
     position: relative;
     font-family: Bould;
+    clip-path: ellipse(100% 53% at 50% 35%);
 
     p { 
 	position: absolute; 
