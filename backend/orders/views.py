@@ -3,6 +3,7 @@ from rest_framework import viewsets, mixins, filters, pagination, status
 from rest_framework.response import Response
 from .serializers import OrderSerializer, ShirtSerializer
 from .models import Order, Shirt
+from .permissions import IsOwnerOrReadOnly
 
 
 def calcPrice(dict):
@@ -30,7 +31,8 @@ class OrderView(PostViewset):
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
-class ShirtView(viewsets.ReadOnlyModelViewSet):
+class ShirtView(viewsets.GenericViewSet):
+    permissions = [IsOwnerOrReadOnly]
     serializer_class = ShirtSerializer
     queryset = Shirt.objects.all()
     filter_backends = [filters.SearchFilter, filters.OrderingFilter]
